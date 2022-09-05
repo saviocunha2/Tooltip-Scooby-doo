@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">    
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/iamceege/tooltipster/4.2.5/dist/css/tooltipster.bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/louisameline/tooltipster-follower/0.1.5/dist/css/tooltipster-follower.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/iamceege/tooltipster/4.2.5/dist/js/tooltipster.bundle.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/louisameline/tooltipster-follower/0.1.5/dist/js/tooltipster-follower.min.js"></script>
+
+    <script>
+                $(function(){
+            $('.follow-image-custom-content').tooltipster({
+                content: $('.custom-content'),
+                plugins: ['follower'],
+                theme: 'tooltipster-shadow',
+                delay: 50
+            });
+        })
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+
+            <img src="/image/Scooby.jpg" class="follow-image-custom-content tooltipstered">
+        <div style="display:none">
+            <div class="custom-content">
+                <img src="/image/logo.gif" class="logo"> Um cachorro medroso!
+            </div>
+        </div>
+    
+</body>
+</html>
